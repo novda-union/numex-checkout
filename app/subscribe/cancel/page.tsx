@@ -1,16 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 const APP_SCHEME = process.env.NEXT_PUBLIC_APP_SCHEME ?? "numex";
 
 export default function CancelPage() {
-  const searchParams = useSearchParams();
-  const token = searchParams.get("token");
-
   const deepLink = `${APP_SCHEME}://subscription/cancel`;
-  const retryHref = token ? `/subscribe?token=${encodeURIComponent(token)}` : "/";
 
   return (
     <div className="max-w-sm w-full text-center mt-8">
@@ -24,15 +19,6 @@ export default function CancelPage() {
       <p className="text-gray-400 text-sm mb-8">
         No charge was made. You can upgrade to Pro anytime from the Numex app.
       </p>
-
-      {token && (
-        <Link
-          href={retryHref}
-          className="block w-full py-3.5 rounded-full bg-[#6C5CE7] hover:bg-[#5a4dd0] text-white font-semibold text-sm transition-colors text-center mb-3"
-        >
-          Try Again
-        </Link>
-      )}
 
       <a
         href={deepLink}
