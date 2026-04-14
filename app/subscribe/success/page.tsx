@@ -5,7 +5,7 @@ import Link from "next/link";
 const APP_SCHEME = process.env.NEXT_PUBLIC_APP_SCHEME ?? "numex";
 
 export default function SuccessPage() {
-  const deepLink = `${APP_SCHEME}://subscription/success`;
+  const deepLink = `${APP_SCHEME}:///subscription/success`;
 
   return (
     <div className="max-w-sm w-full text-center mt-8">
