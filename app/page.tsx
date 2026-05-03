@@ -1,5 +1,3 @@
-import { redirect } from "next/navigation";
-
 // Root redirects to app store or a landing; for now just shows a placeholder.
 export default function Home() {
   return (

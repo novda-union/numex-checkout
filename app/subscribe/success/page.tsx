@@ -15,7 +15,7 @@ export default function SuccessPage() {
         </svg>
       </div>
 
-      <h1 className="text-2xl font-bold mb-2">You're now Pro!</h1>
+      <h1 className="text-2xl font-bold mb-2">You&apos;re now Pro!</h1>
       <p className="text-gray-400 text-sm mb-8">
         Your Numex Pro subscription is active. Enjoy unlimited voice transactions,
         AI insights, and all premium features.

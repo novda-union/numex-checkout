@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 const APP_SCHEME = process.env.NEXT_PUBLIC_APP_SCHEME ?? "numex";
 
 export default function CancelPage() {
